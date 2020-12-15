@@ -4,12 +4,12 @@ A static web server to serve multiple virtual hosts.
 
 README file work in progress.
 
-# Features
+## Features
 
 - Single binary
 - No dependencies
 
-# Compile
+## Compile
 
 To download the package and compile run:
 
@@ -17,7 +17,7 @@ To download the package and compile run:
 go get github.com/jh12z/serve
 ```
 
-# Docker
+## Docker
 
 Docker images are automatically generated for many platforms and available in Docker Hub.
 To run the image in a container you need to mount a host directory into the container's `/sites` directory.

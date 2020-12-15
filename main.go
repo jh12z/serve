@@ -19,6 +19,7 @@ func main() {
 	handler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		hostname := strings.Split(r.Host, ":")[0]
 		r.URL.Path = "/" + hostname + r.URL.Path
+		log.Println(r.Method + " " + r.URL.Path)
 		fs.ServeHTTP(w, r)
 	})
 
