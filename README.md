@@ -1,4 +1,6 @@
-# serve
+[![Docker Pulls](https://img.shields.io/docker/pulls/jh12z/serve.svg)](https://hub.docker.com/r/jh12z/serve/)
+[![Docker Build](https://img.shields.io/docker/automated/jh12z/serve.svg)](https://hub.docker.com/r/jh12z/serve/)
+[![Docker Build](https://img.shields.io/docker/build/jh12z/serve.svg)](https://hub.docker.com/r/jh12z/serve/)
 
 A static web server to serve multiple virtual hosts.
 
@@ -20,8 +22,10 @@ go get github.com/jh12z/serve
 ## Docker
 
 Docker images are automatically generated for many platforms and available in Docker Hub.
+
 To run the image in a container you need to mount a host directory into the container's `/sites` directory.
 This directory should contain all the sites you want to serve.
+
 You also need to ensure all host names are resolved to the IP address where docker is running.
 For local development the best thing is to make it resolve to 127.0.0.1.
 
